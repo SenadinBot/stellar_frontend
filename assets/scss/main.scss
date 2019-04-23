@@ -1,0 +1,33 @@
+// Bootstrap
+@import "bootstrap";
+@import "bootstrap/theme";
+
+// Variables
+@import 'variables';
+
+// Base
+@import 'base';
+
+// Fonts
+@import 'fonts';
+
+// Slick
+@import url('slick/slick-theme.min.css');
+@import url('slick/slick.min.css');
+
+// Aos
+@import url('aos.min.css');
+
+// Components
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/common';
+@import 'components/about-us';
+@import 'components/blog';
+@import 'components/cases';
+@import 'components/image-banner';
+@import 'components/intro-banner';
+@import 'components/seo';
+@import 'components/services';
+@import 'components/technology';

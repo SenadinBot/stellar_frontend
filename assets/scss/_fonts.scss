@@ -1,0 +1,133 @@
+// Open Sans
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('/assets/fonts/openSans/open-sans/OpenSans.eot'); /* IE9 Compat Modes */
+    src: local('open sans'), local('OpenSans'),
+        url('/assets/fonts/openSans/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/openSans/open-sans/OpenSans.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/openSans/open-sans/OpenSans.woff') format('woff'), /* Modern Browsers */
+        url('/assets/fonts/openSans/open-sans/OpenSans.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/openSans/open-sans/OpenSans.svg#OpenSans') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+}
+
+// Open Sans Bold
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.eot'); /* IE9 Compat Modes */
+    src: local('open sans bold'), local('OpenSans-Bold'),
+        url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.woff') format('woff'), /* Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/openSans/open-sans-bold/OpenSans-Bold.svg#OpenSans') format('svg'); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Open Sans Semibold
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.eot'); /* IE9 Compat Modes */
+    src: local('open sans semibold'), local('OpenSans-Semibold'),
+        url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.woff') format('woff'), /* Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/openSans/open-sans-semibold/OpenSans-Semibold.svg#OpenSans') format('svg'); /* Legacy iOS */
+    font-weight: 600;
+    font-style: normal;
+}
+
+// Open Sans Light
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.eot'); /* IE9 Compat Modes */
+    src: local('open sans light'), local('OpenSans-Light'),
+        url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.woff') format('woff'), /* Modern Browsers */
+        url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/openSans/open-sans-light/OpenSans-Light.svg#OpenSans') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Oswald Medium
+@font-face {
+    font-family: 'Oswald Medium';
+    src: url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.eot');
+    src: url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.ttf') format('truetype'),
+        url('/assets/fonts/oswald/oswald-medium/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// Oswald Light
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('/assets/fonts/oswald/oswald-light/Oswald-Light.eot');
+    src: url('/assets/fonts/oswald/oswald-light/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-light/Oswald-Light.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-light/Oswald-Light.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-light/Oswald-Light.ttf') format('truetype'),
+        url('/assets/fonts/oswald/oswald-light/Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Oswald Semibold
+@font-face {
+    font-family: 'Oswald Semibold';
+    src: url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.eot');
+    src: url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.ttf') format('truetype'),
+        url('/assets/fonts/oswald/oswald-semibold/Oswald-SemiBold.svg#Oswald-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// Oswald Regular
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('/assets/fonts/oswald/oswald-regular/Oswald-Regular.eot');
+    src: url('/assets/fonts/oswald/oswald-regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-regular/Oswald-Regular.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-regular/Oswald-Regular.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-regular/Oswald-Regular.ttf') format('truetype'),
+        url('/assets/fonts/oswald/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Oswald Bold
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.eot');
+    src: url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.ttf') format('truetype'),
+        url('/assets/fonts/oswald/oswald-bold/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Oswald ExtraLight
+@font-face {
+    font-family: 'Oswald ExtraLight';
+    src: url('Oswald-ExtraLight.eot');
+    src: url('/assets/fonts/oswald/oswald-extralight/Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/oswald/oswald-extralight/Oswald-ExtraLight.woff2') format('woff2'),
+        url('/assets/fonts/oswald/oswald-extralight/Oswald-ExtraLight.woff') format('woff'),
+        url('/assets/fonts/oswald/oswald-extralight/Oswald-ExtraLight.ttf') format('truetype'),
+        url('/assets/fonts/oswald/oswald-extralight/Oswald-ExtraLight.svg#Oswald-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}

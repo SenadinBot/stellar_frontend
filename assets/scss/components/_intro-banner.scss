@@ -1,0 +1,60 @@
+.intro-banner-container {
+    padding: 99px 0 50px 0;
+    text-align: center;
+    span {
+        display: block;
+        &.title {
+            font-size: 70px;
+            line-height: 100px;
+            letter-spacing: 0.8px;
+            font-family: $oswaldExtraLight;
+            color: $blueZodiac;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            @include media-sm {
+                font-size: 62px;
+                line-height: 90px;            
+            }
+            @include media-xs-landscape {
+                font-size: 62px;
+                line-height: 90px;            
+            }
+            @include media-xs-portrait {
+                font-size: 54px;
+                line-height: 72px;
+            }
+        }
+        &.subtitle {
+            font-family: $oswald;
+            font-size: 26px;
+            line-height: 50px;
+            letter-spacing: 0.64px;
+            color: $doveGray;
+            @include media-lg {
+                padding: 0 100px;
+            }
+            @include media-md {
+                padding: 0 50px;
+            }
+            @include media-sm {
+                font-size: 18px;
+                line-height: 40px;
+            }
+            @include media-xs {
+                font-size: 22px;
+                line-height: 38px;
+            }
+        }
+    }
+    &.intro-image-banner {
+        padding: 54px 0 50px 0;
+        .img-container {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+}

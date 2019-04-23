@@ -1,0 +1,365 @@
+main {
+    transition: margin-right 1s ease;
+    -webkit-transition: margin-right 1s ease; 
+}
+p {
+    font-family: $openSans;
+    font-size: 16px;
+    line-height: 30px;
+    color: $scarpaFlow;
+    margin: 0 0 10px 0;
+}
+h1 {
+    font-family: $oswaldExtraLight;
+    font-size: 60px;
+    line-height: 100px;
+    color: $white;
+    margin: 0;
+    letter-spacing: 1.28px;
+    @include media-sm {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    @include media-xs {
+        font-size: 38px;
+        line-height: 56px;
+    }
+}
+h2 {
+    font-family: $oswald;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.64px;
+    color: $blueZodiac;
+    display: block;
+    margin-top: 0;
+    @include media-xs {
+        font-size: 30px;
+        line-height: 46px;
+    }
+    @include media-sm {
+        font-size: 34px;
+    }
+}
+h3 {
+    font-family: $oswald;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.64px;
+    color: $blueZodiac;
+    @include media-xs {
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+h4 {
+    color: $blueZodiac;
+    letter-spacing: 0.64px;
+    font-size: 22px;
+    line-height: 36px;
+    font-family: $oswald;
+    margin: 0;
+}
+h5 {
+    font-family: $openSansSemiBold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #222324;
+    margin: 0 0 10px 0;
+}
+a {
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:active {
+        outline: none;
+        text-decoration: none;
+    }
+    &:visited {
+        outline: none;
+        text-decoration: none;
+    }
+}
+.flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    @include media-xs {
+        display: initial;
+        display: initial;
+        display: block;
+        -ms-flex-wrap: initial;
+            flex-wrap: initial;
+    }
+    &:before,
+    &:after {
+        display: none;
+        display: none;
+    }
+    > [class*='col-'] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        @include media-xs {
+            display: initial;
+            display: initial;
+            display: block;
+            -webkit-box-orient: initial;
+            -webkit-box-direction: initial;
+            -ms-flex-direction: initial;
+            flex-direction: initial;
+        }
+    }
+}
+
+// Buttons
+.primary-btn {
+    background-color: $burntSienna;
+    color: $white;
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 21px;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid $burntSienna;
+    display: inline-block;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+        color: $burntSienna;
+        outline: 0;
+        &:before {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+        &:after {
+            background-image: url("../../assets/images/icons/red-next-arrow.png");
+        }
+    }
+    &:focus {
+        text-decoration: none;
+        color: $burntSienna;
+        outline: 0;
+        &:before {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    &:active {
+        outline: 0;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        z-index: -1;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
+        transition: 0.2s linear;
+        border-radius: 6px;
+    }
+    &:after {
+        content: "";
+        background-image: url("../../assets/images/icons/white-next-arrow.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    &.load-more {
+        &:after {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+}
+.secondary-btn {
+    background-color: transparent;
+    color: $white;
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 21px;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid $white;
+    display: inline-block;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+        color: $burntSienna;
+        outline: 0;
+        &:before {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+        &:after {
+            background-image: url("../../assets/images/icons/red-next-arrow.png");
+        }
+    }
+    &:focus {
+        text-decoration: none;
+        color: $burntSienna;
+        outline: 0;
+        &:before {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    &:active {
+        outline: 0;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        z-index: -1;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
+        transition: 0.2s linear;
+        border-radius: 6px;
+    }
+    &:after {
+        content: "";
+        background-image: url("../../assets/images/icons/white-next-arrow.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    &.load-more {
+        &:after {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+  
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+  
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+  
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+  
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.jarallax {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    @include media-xs {
+        position: relative;
+        height: auto;
+    }
+    @include media-sm {
+        position: relative;
+        height: auto;
+    }
+    @include media-md {
+        position: relative;
+        height: auto;
+    }
+}

@@ -1,0 +1,79 @@
+.technology-info-container {
+    float: left;
+    width: 100%;
+    background-color: $dawnPink;
+    padding: 120px 0 40px 0;
+    margin-bottom: 40px;
+    @include media-xlg {
+        padding: 158px 0 59px 0;
+        margin-bottom: 66px;
+    }
+    @include media-xs {
+        padding: 80px 0 40px 0;
+        margin-bottom: 30px;
+    }
+    .technology-info-content {
+        float: left;
+        width: 60%;
+        padding: 0 70px;
+        @include media-xlg {
+            padding: 0 157.3px 0 228.5px;
+        }
+        h2 {
+            text-transform: uppercase;
+            margin: 0 0 49px 0;
+            @include media-xs {
+                margin-bottom: 25px;
+            }
+        }
+        @include media-xs {
+            width: 100%;
+            padding: 0 20px;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        .technology-info-item {
+            display: block;
+            margin-bottom: 40px;
+            span {
+                text-transform: uppercase;
+                font-family: $oswald;
+                font-size: 28px;
+                letter-spacing: 0.04em;
+                line-height: 50px;
+                color: $blueZodiac;
+                width: 100%;
+                display: block;
+                padding-left: 5px;
+                padding-bottom: 16.5px;
+                margin-bottom: 24.5px;
+                border-bottom: 1px solid $burntSienna;
+                @include media-xs {
+                    font-size: 26px;
+                    padding-bottom: 14.5px;
+                    margin-bottom: 20.5px;
+                }
+            }
+            p {
+                color: $scarpaFlow;
+                padding-left: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .img-container {
+        float: left;
+        width: 40%;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
