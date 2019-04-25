@@ -1,0 +1,22 @@
+.maps-container {
+    text-align: center;
+    #map{
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 30.25%;
+        padding-top: 30px;
+        position: relative;
+        @include media-xlg {
+            padding-bottom: 36.25%;
+        }
+    }
+    .full-background-image-title {
+        margin-bottom: 30px;
+    }
+    .map-item {
+        margin-bottom: 40px;
+        @include media-xlg {
+            margin-bottom: 67px;
+        }
+    }
+}
