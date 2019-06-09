@@ -5784,11 +5784,11 @@ header {
   transition: all 0.5s; }
   @media (max-width: 767px) {
     header {
-      padding: 23px 16px;
+      padding: 23px 0;
       height: 76px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     header {
-      padding: 23px 16px;
+      padding: 23px 0;
       height: 76px; } }
   header.home-header {
     background-color: transparent; }
@@ -5837,7 +5837,7 @@ header {
         height: 29px;
         position: relative;
         top: 0;
-        left: 0;
+        left: 16px;
         float: left; } }
     @media (min-width: 768px) and (max-width: 991px) {
       header .logo-container {
@@ -5845,7 +5845,7 @@ header {
         height: 29px;
         position: relative;
         top: 0;
-        left: 0;
+        left: 16px;
         float: left; } }
     header .logo-container img {
       width: 100%;
@@ -5924,7 +5924,7 @@ header {
         margin-left: -100%;
         width: 0;
         position: absolute;
-        top: 80px;
+        top: 53px;
         left: 0;
         height: 100vh;
         background: #505759;
@@ -5934,7 +5934,7 @@ header {
         margin-left: -100%;
         width: 0;
         position: absolute;
-        top: 80px;
+        top: 53px;
         left: 0;
         height: 100vh;
         background: #505759;
@@ -6125,7 +6125,7 @@ header {
           top: 0;
           right: 0;
           width: 48px;
-          height: 100%; }
+          height: 66px; }
           header nav > ul > li .mobile-arrow .black-icon {
             display: none; }
           header nav > ul > li .mobile-arrow img {
@@ -6155,11 +6155,19 @@ header {
           @media (max-width: 767px) {
             header nav > ul > li .mega-menu {
               top: 0;
-              border-radius: 0; } }
+              border-radius: 0;
+              -webkit-transition: none;
+              -moz-transition: none;
+              -o-transition: none;
+              transition: none; } }
           @media (min-width: 768px) and (max-width: 991px) {
             header nav > ul > li .mega-menu {
               top: 0;
-              border-radius: 0; } }
+              border-radius: 0;
+              -webkit-transition: none;
+              -moz-transition: none;
+              -o-transition: none;
+              transition: none; } }
           header nav > ul > li .mega-menu .menu-items-container .menu-items-content-intro {
             display: inline-block;
             width: 33.333%;
@@ -6347,11 +6355,13 @@ header {
             @media (max-width: 767px) {
               header nav > ul > li .mega-menu .menu-items-container .menu-items-content {
                 width: 100%;
-                padding: 0; } }
+                padding: 0;
+                border-radius: 0; } }
             @media (min-width: 768px) and (max-width: 991px) {
               header nav > ul > li .mega-menu .menu-items-container .menu-items-content {
                 width: 100%;
-                padding: 0; } }
+                padding: 0;
+                border-radius: 0; } }
             header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item {
               margin-top: 30px; }
               @media (min-width: 1600px) {
@@ -6447,11 +6457,13 @@ header {
                   @media (max-width: 767px) {
                     header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .inner-sub-menu a {
                       margin-bottom: 0;
-                      padding: 10px 0 10px 56px; } }
+                      padding: 10px 0 10px 56px;
+                      line-height: 26px; } }
                   @media (min-width: 768px) and (max-width: 991px) {
                     header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .inner-sub-menu a {
                       margin-bottom: 0;
-                      padding: 10px 0 10px 56px; } }
+                      padding: 10px 0 10px 56px;
+                      line-height: 26px; } }
                 @media (max-width: 767px) {
                   header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .inner-sub-menu {
                     visibility: hidden;
@@ -6461,11 +6473,7 @@ header {
                     position: absolute;
                     text-align: left;
                     width: 100%;
-                    z-index: 99;
-                    -webkit-transition: all 0.4s ease-in-out;
-                    -moz-transition: all 0.4s ease-in-out;
-                    -o-transition: all 0.4s ease-in-out;
-                    transition: all 0.4s ease-in-out; } }
+                    z-index: 99; } }
                 @media (min-width: 768px) and (max-width: 991px) {
                   header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .inner-sub-menu {
                     visibility: hidden;
@@ -6475,11 +6483,7 @@ header {
                     position: absolute;
                     text-align: left;
                     width: 100%;
-                    z-index: 99;
-                    -webkit-transition: all 0.4s ease-in-out;
-                    -moz-transition: all 0.4s ease-in-out;
-                    -o-transition: all 0.4s ease-in-out;
-                    transition: all 0.4s ease-in-out; } }
+                    z-index: 99; } }
                 header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .inner-sub-menu .mobile-arrow img {
                   width: 20px;
                   height: 20px;
@@ -6523,6 +6527,10 @@ header {
                   visibility: visible;
                   opacity: 1;
                   position: relative; }
+                header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .menu-item-side .mobile-arrow .white-icon {
+                  display: none; }
+                header nav > ul > li .mega-menu .menu-items-container .menu-items-content .menu-items-content-item .menu-item-side .mobile-arrow .black-icon {
+                  display: block; }
 
 main {
   margin-top: 116px; }

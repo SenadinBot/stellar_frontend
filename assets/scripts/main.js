@@ -21,16 +21,17 @@ $(document).ready(function () {
         duration: 700
     });
 
-    // Hover
-    // $(".sub-menu > a").hover( function (e) {
-    //     $('body').toggleClass('hover');
-    // });
-
     // Open/Close Mobile Menu
     $('.nav-icon').on('click', function () {
         $('body').toggleClass('menu-open');
         $('.menu-item-side').removeClass('second-level');
         $('.sub-menu').removeClass('first-level');
+    })
+
+    $('.phone-container').on('click', function () {
+        $('.menu-item-side').removeClass('second-level');
+        $('.sub-menu').removeClass('first-level');
+        $('body').removeClass('menu-open');
     })
 
     // Open/Close Mobile Submenu 
@@ -153,7 +154,7 @@ function initMap() {
     if ($('#map').length > 0) {
         function initialize() {
             var myLatlng = new google.maps.LatLng(53.3333, -3.08333);
-            var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+            var imagePath = '../../assets/images/icons/location.svg'
             var mapOptions = {
                 zoom: 11,
                 center: myLatlng,

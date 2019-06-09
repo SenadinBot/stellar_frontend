@@ -76,11 +76,11 @@ header {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
     @include media-xs {
-        padding: 23px 16px;
+        padding: 23px 0;
         height: 76px;
     }
     @include media-sm {
-        padding: 23px 16px;
+        padding: 23px 0;
         height: 76px;
     }
     &.home-header {
@@ -141,7 +141,7 @@ header {
             height: 29px;
             position: relative;
             top: 0;
-            left: 0;
+            left: 16px;
             float: left;
         }
         @include media-sm {
@@ -149,7 +149,7 @@ header {
             height: 29px;
             position: relative;
             top: 0;
-            left: 0;
+            left: 16px;            
             float: left;
         }
         img {
@@ -236,7 +236,7 @@ header {
             margin-left: -100%;
             width: 0;
             position: absolute;
-            top: 80px;
+            top: 53px;
             left: 0;
             height: 100vh;
             background: #505759;
@@ -246,7 +246,7 @@ header {
             margin-left: -100%;
             width: 0;
             position: absolute;
-            top: 80px;
+            top: 53px;
             left: 0;
             height: 100vh;
             background: #505759;
@@ -471,7 +471,7 @@ header {
                     top: 0;
                     right: 0;
                     width: 48px;
-                    height: 100%;
+                    height: 66px;
                     .black-icon {
                         display: none;
                     }
@@ -504,10 +504,18 @@ header {
                     @include media-xs {
                         top: 0;
                         border-radius: 0;
+                        -webkit-transition: none;
+                        -moz-transition: none;
+                        -o-transition: none;
+                        transition: none;
                     }
                     @include media-sm {
                         top: 0;
                         border-radius: 0;
+                        -webkit-transition: none;
+                        -moz-transition: none;
+                        -o-transition: none;
+                        transition: none;
                     }
                     .menu-items-container {
                         .menu-items-content-intro {
@@ -718,10 +726,12 @@ header {
                             @include media-xs {
                                 width: 100%;
                                 padding: 0;
+                                border-radius: 0;
                             }
                             @include media-sm {
                                 width: 100%;
                                 padding: 0;
+                                border-radius: 0;
                             }
                             .menu-items-content-item {
                                 margin-top: 30px;
@@ -825,10 +835,12 @@ header {
                                         @include media-xs {
                                             margin-bottom: 0;
                                             padding: 10px 0 10px 56px;
+                                            line-height: 26px;
                                         }
                                         @include media-sm {
                                             margin-bottom: 0;
                                             padding: 10px 0 10px 56px;
+                                            line-height: 26px;
                                         }
                                     }
                                     @include media-xs {
@@ -840,10 +852,10 @@ header {
                                         text-align: left;
                                         width: 100%;
                                         z-index: 99;
-                                        -webkit-transition: all 0.4s ease-in-out;
-                                        -moz-transition: all 0.4s ease-in-out;
-                                        -o-transition: all 0.4s ease-in-out;
-                                        transition: all 0.4s ease-in-out;
+                                        // -webkit-transition: all 0.4s ease-in-out;
+                                        // -moz-transition: all 0.4s ease-in-out;
+                                        // -o-transition: all 0.4s ease-in-out;
+                                        // transition: all 0.4s ease-in-out;
                                     }
                                     @include media-sm {
                                         visibility: hidden;
@@ -854,10 +866,10 @@ header {
                                         text-align: left;
                                         width: 100%;
                                         z-index: 99;
-                                        -webkit-transition: all 0.4s ease-in-out;
-                                        -moz-transition: all 0.4s ease-in-out;
-                                        -o-transition: all 0.4s ease-in-out;
-                                        transition: all 0.4s ease-in-out;
+                                        // -webkit-transition: all 0.4s ease-in-out;
+                                        // -moz-transition: all 0.4s ease-in-out;
+                                        // -o-transition: all 0.4s ease-in-out;
+                                        // transition: all 0.4s ease-in-out;
                                     }
                                     .mobile-arrow { 
                                         img {
@@ -913,6 +925,14 @@ header {
                                             visibility: visible;
                                             opacity: 1;
                                             position: relative;
+                                        }
+                                    }
+                                    .mobile-arrow {
+                                        .white-icon {
+                                            display: none;
+                                        }
+                                        .black-icon {
+                                            display: block;
                                         }
                                     }
                                 }
