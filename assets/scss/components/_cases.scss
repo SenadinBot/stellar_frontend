@@ -13,6 +13,29 @@
     @include media-xs-portrait {
         margin-top: -60px;
     }
+    &.more-case-container {
+        margin-bottom: 70px;
+        margin-top: 0;
+        @include media-xlg {
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        @include media-xs {
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        @include media-xs-portrait {
+            margin-top: 0;
+            margin-bottom: 50px;
+        } 
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        @include media-xs {
+            margin-bottom: 30px;
+        }
+    }
     .cases-item {
         -webkit-transition: all .3s ease 0s;
         -moz-transition: all .3s ease 0s;
