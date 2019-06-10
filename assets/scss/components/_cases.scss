@@ -125,3 +125,137 @@
         }
     }
 }
+.case-intro-container {
+    font-size: 0;
+    margin-bottom: 40px;
+    .case-intro-content {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        @include media-xs {
+            width: 100%;
+            padding: 30px 0;
+        }
+        @include media-sm {
+            width: 100%;
+            padding: 50px 0;
+        }
+        span {
+            display: block;
+            font-size: 60px;
+            line-height: 90px;
+            color: $blueZodiac;
+            font-family: $oswald;
+            display: block;
+            margin-bottom: 26.5px;
+            @include media-xlg {
+                font-size: 70px;
+                line-height: 100px;
+            }
+            @include media-md {
+                font-size: 40px;
+                line-height: 60px;
+            }
+            @include media-sm {
+                font-size: 30px;
+                line-height: 50px;
+            }
+            @include media-xs {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            color: $doveGray;
+            font-family: $oswaldLight;
+            padding-right: 30px;
+            .media-xlg {
+                font-size: 26px;
+                line-height: 50px;
+            }
+            .media-md {
+                font-size: 24px;
+                line-height: 38px;
+            }
+            .media-sm {
+                font-size: 24px;
+                line-height: 38px;
+            }
+            .media-xs {
+                font-size: 22px;
+                line-height: 38px;
+            }
+        }
+        a {
+            &.scroll-icon {
+                width: 29.18px;
+                height: 29.18px;
+                position: relative;
+                cursor: pointer;
+                display: block;
+                margin-top: 40px;
+                text-decoration: none;            
+                &:hover {
+                    &:after {
+                        opacity: 0.8;
+                    }
+                }
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+                &:after {
+                    content: "";
+                    width: 29.18px;
+                    height: 29.18px; 
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../../assets/images/icons/forward-icon.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+        .case-inner-content {
+            padding-left: 65px;
+            width: 100%;
+            @include media-xlg {
+                padding-left: 150px;
+                width: 85%;
+            }
+            @include media-md {
+                padding-left: 45px;
+            }
+            @include media-xs {
+                padding-left: 25px;
+                width: 100%;
+            }
+            
+        }
+    }
+    .case-intro-image {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

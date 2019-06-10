@@ -449,7 +449,7 @@
     .result-container {
         width: 50%;
         float: left;
-        background-color: $scarpaFlow;
+        // background-color: $scarpaFlow;
         padding: 0 44px 0 87.5px;
         @include media-xlg {
             padding: 0 64px 0 107.5px;
@@ -464,6 +464,43 @@
         @include media-sm {
             width: 100%;
             padding: 80px 44px 80px 87.5px;
+        }
+        &.center-result-container {
+            text-align: center;
+        }
+        &.case-result {
+            .result-item-content {
+                .result-item {
+                    border-bottom: 1px solid $white;
+                    span {
+                        color: $burntSienna;
+                    }
+                }
+            }
+            span {
+                &.result-title {
+                    border-bottom: 1px solid $white;
+                }
+            }
+            .result-inner-content { 
+                top: initial;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+            @include media-sm {
+                padding: 0 44px 0 87.5px;
+            }
+            &:first-child {
+                @include media-sm {
+                    margin-bottom: 40px;
+                }
+            }
+            &:last-child {
+                @include media-sm {
+                    margin-bottom: 0;
+                }
+            }
         }
         .result-inner-content {
             position: relative;
@@ -490,6 +527,18 @@
                 letter-spacing: 0.64px;
                 border-bottom: 1px solid $burntSienna;
                 padding-bottom: 24.5px;
+            }
+        }
+        .result-content {
+            margin: 40px 0;
+            span {
+                font-size: 26px;
+                line-height: 50px;
+                color: $white;
+                font-family: $oswald;
+                display: block;
+                text-transform: initial;
+                margin-bottom: 15px;
             }
         }
         .result-item-content {
@@ -673,4 +722,170 @@ body {
         -moz-transition: 0.2s linear;
         transition: 0.2s linear;
     }
+}
+.two-column-content-container {
+    border-bottom: 1px solid #BEB8B8;
+    margin-bottom: 85px;
+    @include media-xs {
+        margin-bottom: 50px;
+    }
+    @include media-sm {
+        margin-bottom: 50px;
+    }
+    @include media-md {
+        margin-bottom: 50px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    span {
+        &.intro {
+            display: block;
+            text-align: center;
+            font-family: $openSansSemiBold;
+            font-size: 16px;
+            line-height: 26px;
+            color: $scarpaFlow;
+        }
+    }
+}
+.two-column-content {
+    font-size: 0;
+    margin: 30px 0;
+    .left-side,
+    .right-side {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        @include media-xs {
+            width: 100%;
+        }
+    }
+    .left-side {
+        padding-right: 90px;
+        @include media-xs {
+            padding-right: 0;
+        }
+        @include media-sm {
+            padding-right: 30px;
+        }
+        @include media-md {
+            padding-right: 50px;
+        }
+    }
+    .right-side {
+        padding-left: 90px;
+        @include media-xs {
+            padding-left: 0;
+        }
+        @include media-sm {
+            padding-left: 30px;
+        }
+        @include media-md {
+            padding-left: 50px;
+        }
+    }
+}
+.info-content-container {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    @include media-xlg {
+        margin-bottom: 40px;
+    }
+    .info-intro {
+        float: left;
+        width: 50%;
+        padding: 0 70px;
+        @include media-xlg {
+            padding: 0 100px 0 228.5px;
+        }
+        @include media-md {
+            padding: 0 50px;
+        }
+        @include media-xs {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        @include media-sm {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+        }
+        span {
+            color: $blueZodiac;
+            font-size: 30px;
+            line-height: 50px;
+            letter-spacing: 0.64px;
+            font-family: $oswaldLight;
+            display: block;
+            @include media-xs {
+                font-size: 26px;
+                line-height: 38px;
+            }
+        }
+    }
+    .info-content {
+        float: left;
+        width: 50%;
+        padding: 0 70px;
+        @include media-xs {
+            width: 100%;
+            padding: 0 20px;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        @include media-xlg {
+            padding: 0 162.5px;
+        }
+        @include media-md {
+            padding: 0 50px;
+        }
+        p {
+            margin-bottom: 20px;
+            width: 90%;
+            @include media-xlg {
+                width: 84%;
+            }
+            @include media-md {
+                width: 97%;
+            }
+            @include media-xs {
+                width: 97%;
+            }
+        }
+    }
+}
+.add-padding {
+    padding: 80px 0 35px 0;
+    @include media-xs {
+        padding: 30px 0;
+    }
+    @include media-sm {
+        padding: 50px 0 25px 0;
+    }
+    @include media-md {
+        padding: 60px 0 30px 0;
+    }
+}
+.add-padding-two {
+    padding: 107px 0;
+    @include media-xs {
+        padding: 50px 0;
+    }
+    @include media-sm {
+        padding: 60px 0;
+    }
+    @include media-md {
+        padding: 80px 0;
+    }
+}
+.remove-margin {
+    margin: 0;
 }
